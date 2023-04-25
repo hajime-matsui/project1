@@ -1,5 +1,10 @@
 body {
- backgroud-color: white;
+ backgroud-color: red;
+}
+
+header {
+ height: 20em;
+ background-color: blue;
 }
 
 .title {
@@ -8,3 +13,4 @@ body {
   text-align: center;
   font-size: 30px;    
 }
+
