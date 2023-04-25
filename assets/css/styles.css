@@ -8,8 +8,8 @@ header {
 }
 
 .title {
-  color: gold;
-  background-color: green;
+  color: black;
+  //background-color: green;
   text-align: center;
   font-size: 30px;    
 }
