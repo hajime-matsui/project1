@@ -15,11 +15,13 @@ header {
 }
 
 .profile {
- max-width: 500px;    
- text-align: center;
+  position: relative;
+  text-align: center;
+ 
 }
 
-.profile .pic {
+.profile img {
+ max-width: 500px;
  width: auto;
 }
 
