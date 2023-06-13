@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Page</title>
+    <title>My Table</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -17,11 +17,40 @@
     <main>
     
         <div class="likes-container">
-           <h3> What is your name?</h3>
-          
-          
-               <input id="userInput" type="text" placeholder="Your name here">
-            <button onClick="sayHello()">Submit</button>    
+            <h3>My Table</h3>
+            <div class="table-input-box">
+                <input id="userInput" type="text" placeholder="your value...">
+                <button onclick="updateTable()">Update</button>
+            </div>
+
+            <br>
+
+            <table class="my-table">
+                <thead>
+                <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Cell A</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                </tbody>
+            </table> 
         </div>
 
      </main>
