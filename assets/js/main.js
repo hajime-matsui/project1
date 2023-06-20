@@ -20,3 +20,17 @@ function updateTable() {
     document.getElementById('table1').rows[2].cells[2].innerText = total2.toString();
     document.getElementById('table1').rows[3].cells[2].innerText = total3.toString();
 }
+
+function updateTable2() {
+    const input = parseInt(document.getElementById("table2-input").value);
+    const el = document.getElementById('table2');
+    const val1 = parseInt(el.rows[1].cells[1].innerHTML);
+    const val2 = parseInt(el.rows[2].cells[1].innerHTML);
+    const val3 = parseInt(el.rows[3].cells[1].innerHTML);
+    const total1 = val1 * input;
+    const total2 = val2 * input;
+    const total3 = val3 * input;
+    el.rows[1].cells[2].innerText = total1.toString();
+    el.rows[2].cells[2].innerText = total2.toString();
+    el.rows[3].cells[2].innerText = total3.toString();
+}
