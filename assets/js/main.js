@@ -42,7 +42,24 @@ function updateTable(tableId, type) {
     const input = parseInt(document.getElementById(`${tableId}-input`).value);
     /* get table element */
     const el = document.getElementById(tableId);
-    /*get column 2 values */
+
+    // loop over table rows
+    for(let i=1; i < el.rows.length; i++){
+        let nextTotal = parseint(el.rows[i].cells[2].innerHTML);
+        
+        if(type === 'multiply'){
+            nextTotal = currentTotal * input;
+        }
+
+        // append row values
+        el.rows[i].cells[2].interHTML; = nextTotal.toString();
+    }
+        
+
+}
+
+const oldTableUpdate = () => {
+     /*get column 2 values */
     const val1 = parseInt(el.rows[1].cells[2].innerHTML);
     const val2 = parseInt(el.rows[2].cells[2].innerHTML);
     const val3 = parseInt(el.rows[3].cells[2].innerHTML);
@@ -51,28 +68,28 @@ function updateTable(tableId, type) {
     let total2 = val2;
     let total3 = val3;
     
-    /* calc multiply */
+    // calc multiply
     if(type === 'multiply') {
         total1 = val1 * input;
         total2 = val2 * input;
         total3 = val3 * input;
     }
 
-    /* calc add */
+    // calc add
     if(type === 'add') {
         total1 = val1 + input;
         total2 = val2 + input;
         total3 = val3 + input;
     }
 
-    /* calc subtract */
+    // calc subtract
     if(type === 'subtract') {
         total1 = val1 - input;
         total2 = val2 - input;
         total3 = val3 - input;
     }
 
-    /* calc divide */
+    // calc divide
     if(type === 'divide') {
         total1 = val1 / input;
         total2 = val2 / input;
