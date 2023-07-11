@@ -45,11 +45,14 @@ function updateTable(tableId, type) {
 
     // loop over table rows
     for(let i=1; i < el.rows.length; i++){
-        let nextTotal = parseInt(el.rows[i].cells[2].innerHTML);
+        let nextTotal;
+        const currentTotal = parseInt(el.rows[i].cells[2].innerHTML);
         
         if(type === 'multiply'){
             nextTotal = currentTotal * input;
         }
+
+        // HW add the following if statements for add, divide, subtract
 
         // append row values
         el.rows[i].cells[2].interHTML = nextTotal.toString();
