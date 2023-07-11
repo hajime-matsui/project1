@@ -52,7 +52,7 @@ function updateTable(tableId, type) {
         }
 
         // append row values
-        el.rows[i].cells[2].interHTML; = nextTotal.toString();
+        el.rows[i].cells[2].interHTML = nextTotal.toString();
     }
         
 
