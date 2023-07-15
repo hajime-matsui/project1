@@ -53,7 +53,16 @@ function updateTable(tableId, type) {
         }
 
         // HW add the following if statements for add, divide, subtract
-
+        if(type === 'add'){
+            nextTotal = currentTotal + input;
+        }
+        if(type === 'subtract'){
+            nextTotal = currentTotal - input;
+        }
+         if(type === 'divide'){
+            nextTotal = currentTotal / input;
+        }
+        
         // append row values
         el.rows[i].cells[2].interHTML = nextTotal.toString();
     }
