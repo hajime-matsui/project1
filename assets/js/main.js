@@ -47,32 +47,35 @@ function addTableRow(tableId) {
 function updateTable(tableId, type) {
     /* get input value */
     const input = parseInt(document.getElementById(`${tableId}-input`).value);
+
     /* get table element */
     const el = document.getElementById(tableId);
 
-    // loop over table rows
-    for(let i=1; i < el.rows.length - 1; i++){
-        let nextTotal = 0;
+    for (let i = 1; i < el.rows.length - 1; i++) {
         const currentTotal = parseInt(el.rows[i].cells[2].innerHTML);
-        
-        if(type === 'multiply'){
+        let nextTotal;
+
+        /* calc multiply */
+        if(type === 'multiply') {
             nextTotal = currentTotal * input;
         }
 
-        // HW add the following if statements for add, divide, subtract
-        if(type === 'add'){
+        /* calc add */
+        if(type === 'add') {
             nextTotal = currentTotal + input;
         }
-        if(type === 'subtract'){
+
+        /* calc subtract */
+        if(type === 'subtract') {
             nextTotal = currentTotal - input;
         }
-         if(type === 'divide'){
+
+        /* calc divide */
+        if(type === 'divide') {
             nextTotal = currentTotal / input;
         }
-        
-        // append row values
-        el.rows[i].cells[2].interHTML = nextTotal.toString();
-    }
-        
 
+        // Append element
+        el.rows[i].cells[2].innerText = nextTotal.toString();
+    }
 }
