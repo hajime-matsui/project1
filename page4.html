@@ -17,17 +17,20 @@
     </header>
     <main>
       <div claas="container">
-        <h1>Login</h1>     
+        <h1>Login</h1>
+        <form id="login-form">  
         <div>    
           <div>Username</div>
           <input type="text" placeholder="Enter your username" value="">
         </div>  
         <div>    
-          <div>Password</div>
-          <input type="password" value=" ">        
+          <label for="password-field">Password-field</label>
+          <input type="password value=""name="password" id="password-field">        
         </div>  
-        <button onclick="Login(false,false)">Login</button>
-      </div>     
+        <button type="submit"id=login-form-submit">Login</button>
+        <div id="login-error-msg">
+            <p id="login-error-msg">Invalid username<span id="error-msg-second-line">and/or password</span></p>
+    </form>    
      </main>
      <footer>
      </footer>
