@@ -31,17 +31,7 @@ header nav a {
     margin-right: 15px;
 }
 
-.login input {
- margin-bottom:10px;
-}
 
-.login label {
-  display: block; 
-}
-
-#login-error-msg-holder {
- display:none;
-}
 
 .profile {
   position: relative;
@@ -53,12 +43,7 @@ header nav a {
  max-width: 500px;
  width: auto;
 }
-.login .container{
- width: 300pxi
-margin-left:auto;
-margin-right:auto;
-background-color:#ccc;
-}
+
 .likes-container {
     margin: 2em;
     display: block;
@@ -96,4 +81,21 @@ table.my-table thead {
     background-color: #ffcc00;
 }
 
+.login .container {
+  margin-left:auto;
+  margin-right:auto;
+ width: 300px;
+  background-color:#ccc;
+}
 
+.login input {
+  margin-bottom:10px;
+}
+
+.login label {
+  display: block; 
+}
+
+#login-error-msg-holder {
+ display:none;
+}
