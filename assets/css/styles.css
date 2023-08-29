@@ -53,7 +53,12 @@ header nav a {
  max-width: 500px;
  width: auto;
 }
-
+.login .container{
+ width: 300pxi
+margin-left:auto;
+margin-right:auto;
+background-color:#ccc;
+}
 .likes-container {
     margin: 2em;
     display: block;
