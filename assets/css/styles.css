@@ -31,6 +31,18 @@ header nav a {
     margin-right: 15px;
 }
 
+.login input {
+ margin-bottom:10px;
+}
+
+.login label {
+  display: block; 
+}
+
+#login-error-msg-holder {
+ display:none;
+}
+
 .profile {
   position: relative;
   text-align: center;
