@@ -1,4 +1,4 @@
-const loginbutton = document.getElementById("login-form-submit");
+const loginButton = document.getElementById("login-form-submit");
 
 loginButton.addEventListener("click", (e) => {
   e.preventDefault();
