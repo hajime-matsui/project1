@@ -86,8 +86,8 @@ table.my-table thead {
   margin-right:auto;
  width: 300px;
   background-color:#fff;
- border: #333333 solid 1px
- border-radius: 10px
+ border: #333333 solid 1px;
+ border-radius: 10px;
  padding:30px;
 }
 
