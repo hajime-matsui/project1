@@ -7,7 +7,7 @@ loginButton.addEventListener("click", (e) => {
   const username = loginForm.username.value;
   const password = loginForm.password.value;
 
-  if (username === "user" && purospi === "password") {
+  if (username === "user" && pass === "password") {
     alert("You have successfully logged in.");
     location.reload();
   } else {
