@@ -111,3 +111,16 @@ table.my-table thead {
  display:none;
  color:red;
 }
+
+.grid-container {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+ padding: 20px;
+ background-color: white;
+} 
+
+.grid-box {
+ padding:20px;
+ 
+}
