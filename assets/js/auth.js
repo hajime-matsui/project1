@@ -9,7 +9,7 @@ loginButton.addEventListener("click", (e) => {
 
   if (username === "ball" && password === "glove") {
     alert("You have successfully logged in.");
-    location.replace("/project1/secure/secure1.html);
+    location.replace("/project1/secure/secure1.html");
   } else {
     alert("Invalid username or password!");
     loginErrorMsgHolder.style.display = "block";
