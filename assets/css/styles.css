@@ -122,5 +122,7 @@ table.my-table thead {
 
 .grid-box {
  padding:20px;
- 
+ min-height: 300px
+ border: 1px solid #ccc
+ text-align: center
 }
