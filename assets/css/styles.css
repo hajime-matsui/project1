@@ -1,6 +1,6 @@
 body {
  margin: 0;
- background-color: #ccc;
+ background-color: #d85a9f;
 }
 
 a {
@@ -9,11 +9,11 @@ a {
 
 header {
     height: 10em;
-    background-color: #333;
+    background-color: #383beb;
 }
 
 header .title {
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     font-size: 30px;
 }
@@ -36,11 +36,23 @@ header nav a {
 .profile {
   position: relative;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
+.row-one {
+    
+    display: flex;
+    justify-content: space-between;
+}
+.row-two {
+    display: flex;
+    justify-content: space-between;
+}
+
 .profile img {
- max-width: 500px;
+ max-width: 300px;
  width: auto;
 }
 
